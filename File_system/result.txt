@@ -1,8 +1,5 @@
-deneme
-deneme1
-deneme2
-deneme3
-
-
-
-merhaba kainat
+This is line A
+Thih is line B
+Merhaba Kainat
+mortal
+life
