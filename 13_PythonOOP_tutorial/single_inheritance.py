@@ -60,7 +60,8 @@ if __name__ == '__main__':
     '''
     
     car = Car("BMW", "XL","2024",2)
-    
+    print(car.displayHUD())
+    print(car.bimbo())
     
     
     
