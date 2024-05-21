@@ -15,7 +15,9 @@
 
 
 class Engine:
-    def __init__(self, type_of_engine: str):
+    def __init__(self, type_of_engine: str, **kwargs):
+        super().__init__(**kwargs)
+        
         self.type_of_engine = type_of_engine
 
     def start(self):
@@ -28,7 +30,9 @@ class Engine:
 
 
 class Transmission:
-    def __init__(self, type_of_transmission: str):
+    def __init__(self, type_of_transmission: str, **kwargs):
+        super().__init__(**kwargs)
+        
         self.type_of_transmission = type_of_transmission
 
     def operate(self):
@@ -37,11 +41,15 @@ class Transmission:
 
 class Car(Engine, Transmission):
 
-    def __init__(self, brand: str, type_of_engine, type_of_transmission):
+    def __init__(self, brand: str, type_of_engine:str, type_of_transmission:str):
 
+        '''
         Engine.__init__(self, type_of_engine)
 
         Transmission.__init__(self, type_of_transmission)
+        '''
+        
+        super().__init__(type_of_engine=type_of_engine, type_of_transmission = type_of_transmission)
 
         self.brand = brand
 
