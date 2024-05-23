@@ -1,7 +1,7 @@
 class Person:
     def __init__(self, name, age):
         self.__name = name  # Private attribute
-        self.__age = age    # Private attribute
+        self.__age = age    # Private attribute 
 
     def get_name(self):
         return self.__name
